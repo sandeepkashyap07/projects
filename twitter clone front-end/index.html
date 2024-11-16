@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home / X</title>
+    <link
+      rel="shortcut icon"
+      href="https://abs.twimg.com/favicons/twitter.3.ico"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  </head>
+  <link rel="stylesheet" href="css/output.css" />
+  <body class="bg-black text-white">
+    <!-- w-full is used to take the full width of the screen -->
+    <div class="flex md:container  sm:mx-auto">
+      <div class="first hidden sm:block sm:w-[10%] lg:block lg:w-[22%]">
+        <!-- <div class="logo flex justify-center items-center lg:flex lg:justify-end invert my-4">
+          <svg
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            class="lg:m-auto w-8 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-1nao33i r-16y2uox r-8kz0gk"
+          >
+            <g>
+              <path
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+              ></path>
+            </g>
+          </svg>
+        </div> -->
+
+        <div class="sidebar sticky top-0 flex lg:items-center flex-col">
+          <ul class="flex flex-col text-xl space-y-1 lg:space-y-2 lg:px-11">
+            <li>
+              <div
+                class="logo flex justify-center items-center lg:flex lg:justify-start px-5 py-2 invert my-0"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  class="w-8 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-1nao33i r-16y2uox r-8kz0gk"
+                >
+                  <g>
+                    <path
+                      d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+            </li>
+
+            <li
+              class="flex justify-start items-center w-fit gap-4 font-bold hover:bg-gray-900 hover:cursor-pointer hover:rounded-full px-5 py-2"
+            >
+              <span class="material-symbols-outlined text-3xl">home</span>
+              <span class="hidden lg:block"> Home </span>
+            </li>
+            <li
+              class="flex justify-start items-center w-fit gap-4 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full px-5 py-2"
+            >
+              <span class="material-symbols-outlined text-3xl">search</span
+              ><span class="hidden lg:block">Explore </span>
+            </li>
+            <li
+              class="flex justify-start items-center w-fit gap-4 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full px-5 py-2"
+            >
+              <span class="material-symbols-outlined text-3xl"
+                >notifications</span
+              ><span class="hidden lg:block">Notifications </span>
+            </li>
+            <li
+              class="flex justify-start items-center w-fit gap-4 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full px-5 py-2"
+            >
+              <span class="material-symbols-outlined text-3xl">mail</span
+              ><span class="hidden lg:block">Message </span>
+            </li>
+            <li
+              class="flex justify-start items-center w-fit gap-4 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full px-5 py-2"
+            >
+              <span class="material-symbols-outlined text-3xl"> check_box </span
+              ><span class="hidden lg:block">Grok </span>
+            </li>
+            <li
+              class="flex justify-start items-center w-fit gap-4 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full px-5 py-2"
+            >
+              <span class="material-symbols-outlined text-3xl"> bookmark </span
+              ><span class="hidden lg:block">Bookmarks </span>
+            </li>
+            <li
+              class="flex justify-start items-center w-fit gap-4 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full px-5 py-2"
+            >
+              <span class="material-symbols-outlined text-3xl">work</span
+              ><span class="hidden lg:block">Jobs </span>
+            </li>
+            <li
+              class="flex justify-start items-center w-fit gap-4 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full px-5 py-2"
+            >
+              <span class="material-symbols-outlined text-3xl"> group </span
+              ><span class="hidden lg:block">Communities </span>
+            </li>
+            <li
+              class="flex justify-start items-center w-fit gap-4 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full px-5 py-2"
+            >
+              <span class="invert">
+                <svg
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  class="m-auto w-8 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-1nao33i r-16y2uox r-8kz0gk"
+                >
+                  <g>
+                    <path
+                      d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                    ></path>
+                  </g></svg></span
+              ><span class="hidden lg:block">Premium </span>
+            </li>
+            <li
+              class="flex justify-start items-center w-fit gap-4 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full px-5 py-2"
+            >
+              <span class="material-symbols-outlined text-4xl"> flash_on </span
+              ><span class="hidden lg:block">Verified Orgs </span>
+            </li>
+            <li
+              class="flex justify-start items-center w-fit gap-4 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full px-5 py-2"
+            >
+              <span class="material-symbols-outlined text-3xl"> person </span
+              ><span class="hidden lg:block">Profile </span>
+            </li>
+            <li
+              class="flex justify-start items-center w-fit gap-4 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full px-5 py-2"
+            >
+              <span class="material-symbols-outlined text-3xl">
+                add_circle </span
+              ><span class="hidden lg:block">More </span>
+            </li>
+
+            <li>
+              <div class="button w-full text-center mt-7 hidden lg:block">
+                <button
+                  class="bg-sky-500 text-white px-28 py-3 font-bold text-lg rounded-full hover:bg-sky-600"
+                >
+                  Post
+                </button>
+              </div>
+            </li>
+            <li>
+              <div class="button w-full text-center my-2 lg:my-6 lg:hidden">
+                <button
+                  class="bg-sky-500 text-white px-3 py-3 font-bold text-lg rounded-full hover:bg-sky-600"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="30"
+                    height="30"
+                    color="white"
+                    fill="none"
+                  >
+                    <path
+                      d="M5.07579 17C4.08939 4.54502 12.9123 1.0121 19.9734 2.22417C20.2585 6.35185 18.2389 7.89748 14.3926 8.61125C15.1353 9.38731 16.4477 10.3639 16.3061 11.5847C16.2054 12.4534 15.6154 12.8797 14.4355 13.7322C11.8497 15.6004 8.85421 16.7785 5.07579 17Z"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M4 22C4 15.5 7.84848 12.1818 10.5 10"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </li>
+
+            <li>
+              <div class="img flex md:mx-0 md:my-0  lg:mx-4 lg:my-5 space-x-3 hover:bg-zinc-800  rounded-full py-2 px-3 ">
+                <img
+                  class="rounded-full"
+                  src="	https://pbs.twimg.com/profile_images/1812167774187487232/MyqCZBm0_normal.jpg"
+                  alt=""
+                />
+                <div class="hidden lg:block">
+                  <div class="text-base font-semibold">
+                    Sandeep kumar
+                    <div class="text-sm text-zinc-500">@sandeepkashyap07</div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div
+        class="second w-fit border-[1px] border-x-zinc-600 border-y-black border-"
+      >
+        <div class="top flex p-2 items-center sticky top-0 backdrop-blur-lg  opacity-70">
+          <div
+            class="bg-sky-500 w-14 h-[5px] absolute bottom-0 left-[90px]  lg:left-[128px]  rounded-lg"
+          ></div>
+          <div
+            class="left flex justify-center w-1/2 hover:cursor-pointer hover:bg-zinc-800"
+          >
+            For you
+          </div>
+          <div class="right flex justify-center w-1/2">Following</div>
+          <!-- <div class="settings flex justify-center mx-3">
+            <span
+              class="material-symbols-outlined text-[23px] text-3xl text-zinc-400"
+              >settings</span
+            >
+          </div> -->
+        </div>
+        <div class="bg-zinc-600 h-[1px] w-full"></div>
+
+        <div class="whatishapp flex">
+          <div class="img mx-4 my-4">
+            <img
+              class="rounded-full"
+              src="	https://pbs.twimg.com/profile_images/1812167774187487232/MyqCZBm0_normal.jpg"
+              alt=""
+            />
+          </div>
+          <div class="w-full">
+            <input
+              class="w-full bg-black text-xl my-5 text-zinc-400 border-collapse placeholder-zinc-500 outline-none"
+              type="text"
+              placeholder="What is happening?!"
+            />
+
+            <div
+              class="flex items-center text-sm font-semibold text-sky-500 mb-4"
+            >
+              <span
+                class="material-symbols-outlined text-[23px] text-sky-500 mr-1"
+              >
+                public
+              </span>
+              Everyone can reply
+            </div>
+
+            <div class="bg-zinc-600 h-[1px] w-[95%]"></div>
+
+            <div
+              class="blueicons flex justify-between items-center my-3 text-sky-500 hover:cursor-pointer"
+            >
+              <ul class="space-x-3 flex justify-center items-center">
+                <li>
+                  <span class="material-symbols-outlined text-[20px]">
+                    add_photo_alternate
+                  </span>
+                </li>
+                <li>
+                  <span class="material-symbols-outlined text-[20px]">
+                    gif_box
+                  </span>
+                </li>
+                <li>
+                  <span class="material-symbols-outlined text-[20px]">
+                    format_list_bulleted
+                  </span>
+                </li>
+                <li>
+                  <span class="material-symbols-outlined text-[20px]">
+                    mood
+                  </span>
+                </li>
+                <li>
+                  <span class="material-symbols-outlined text-[20px]">
+                    pending_actions
+                  </span>
+                </li>
+                <li>
+                  <span class="material-symbols-outlined text-[20px]">
+                    location_on
+                  </span>
+                </li>
+              </ul>
+
+              <div
+                class="bg-sky-500 px-5 py-2 rounded-3xl font-bold text-white mx-3"
+              >
+                Post
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-zinc-600 h-[1px] w-full"></div>
+
+        <div class="posts">
+          <div class="post my-2">
+            <div class="flex">
+              <div class="image ml-4 my-1 mr-2">
+                <img
+                  class="rounded-full"
+                  src="	https://pbs.twimg.com/profile_images/1812167774187487232/MyqCZBm0_normal.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="content cursor-pointer w-[84%]">
+                <span class="font-semibold hover:underline"
+                  >Sandeep Kashyap
+                </span>
+                <span class="text-zinc-500">@sandeepkashyap07 . 22h</span>
+                <div>
+                  hey i am sandeep kumar this my new project in which i created
+                  a twitter clone using html javascript and tailwindCSS
+                </div>
+                <div class="postimg mt-3">
+                  <img
+                    class="rounded-xl"
+                    src="https://pbs.twimg.com/media/GcMk1d6asAAH2N0?format=jpg&name=small"
+                    alt=""
+                    width="400px"
+                  />
+                </div>
+                <div class="icons my-1 flex items-center justify-between">
+                  <div
+                    class="icon space-x-0 sm:space-x-5  lg:space-x-[32px] flex items-center text-zinc-500"
+                  >
+                    <!-- <div class=" flex items-center hover:text-sky-500 hover:bg-gray-900 py-3 px-3 rounded-3xl">
+                    </div> -->
+
+                    <div
+                      class="flex items-center hover:text-sky-500 hover:bg-gray-900 py-3 px-3 rounded-3xl"
+                    >
+                      <span class="material-symbols-outlined text-[23px]">
+                        mode_comment </span
+                      >140k
+                    </div>
+
+                    <div
+                      class="flex items-center hover:text-green-500 hover:bg-gray-900 py-3 px-3 rounded-3xl"
+                    >
+                      <span class="material-symbols-outlined text-[23px]">
+                        repeat </span
+                      >200k
+                    </div>
+                    <div
+                      class="flex items-center hover:text-rose-500 hover:bg-zinc-800 py-3 px-3 rounded-3xl"
+                    >
+                      <span class="material-symbols-outlined text-[23px]">
+                        favorite
+                      </span>
+                      1.3m
+                    </div>
+                    <div
+                      class="flex items-center hover:text-sky-500 hover:bg-gray-900 py-3 px-3 rounded-3xl"
+                    >
+                      <span class="material-symbols-outlined text-[23px]">
+                        bar_chart_4_bars </span
+                      >38k
+                    </div>
+                  </div>
+                  <div class="text-[20px] text-zinc-500 mr-3">
+                    <span class="material-symbols-outlined text-[23px]">
+                      bookmark
+                    </span>
+                    <span class="material-symbols-outlined text-[23px]">
+                      upload
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bg-zinc-600 h-[1px] w-full"></div>
+          </div>
+          <div class="post my-2">
+            <div class="flex">
+              <div class="image ml-4 my-1 mr-2">
+                <img
+                  class="rounded-full"
+                  src="	https://pbs.twimg.com/profile_images/1812167774187487232/MyqCZBm0_normal.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="content cursor-pointer w-[84%]">
+                <span class="font-semibold hover:underline"
+                  >Sandeep Kashyap
+                </span>
+                <span class="text-zinc-500">@sandeepkashyap07 . 22h</span>
+                <div>
+                  hey i am sandeep kumar this my new project in which i created
+                  a twitter clone using html javascript and tailwindCSS
+                </div>
+                <div class="postimg mt-3">
+                  <img
+                    class="rounded-xl"
+                    src="https://pbs.twimg.com/media/GcMk1d6asAAH2N0?format=jpg&name=small"
+                    alt=""
+                    width="400px"
+                  />
+                </div>
+                <div class="icons my-1 flex items-center justify-between">
+                  <div
+                    class="icon space-x-0 sm:space-x-5  lg:space-x-[32px] flex items-center text-zinc-500"
+                  >
+                    <!-- <div class=" flex items-center hover:text-sky-500 hover:bg-gray-900 py-3 px-3 rounded-3xl">
+                    </div> -->
+
+                    <div
+                      class="flex items-center hover:text-sky-500 hover:bg-gray-900 py-3 px-3 rounded-3xl"
+                    >
+                      <span class="material-symbols-outlined text-[23px]">
+                        mode_comment </span
+                      >140k
+                    </div>
+
+                    <div
+                      class="flex items-center hover:text-green-500 hover:bg-gray-900 py-3 px-3 rounded-3xl"
+                    >
+                      <span class="material-symbols-outlined text-[23px]">
+                        repeat </span
+                      >200k
+                    </div>
+                    <div
+                      class="flex items-center hover:text-rose-500 hover:bg-zinc-800 py-3 px-3 rounded-3xl"
+                    >
+                      <span class="material-symbols-outlined text-[23px]">
+                        favorite
+                      </span>
+                      1.3m
+                    </div>
+                    <div
+                      class="flex items-center hover:text-sky-500 hover:bg-gray-900 py-3 px-3 rounded-3xl"
+                    >
+                      <span class="material-symbols-outlined text-[23px]">
+                        bar_chart_4_bars </span
+                      >38k
+                    </div>
+                  </div>
+                  <div class="text-[20px] text-zinc-500 mr-3">
+                    <span class="material-symbols-outlined text-[23px]">
+                      bookmark
+                    </span>
+                    <span class="material-symbols-outlined text-[23px]">
+                      upload
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bg-zinc-600 h-[1px] w-full"></div>
+          </div>
+          <div class="post my-2">
+            <div class="flex">
+              <div class="image ml-4 my-1 mr-2">
+                <img
+                  class="rounded-full"
+                  src="	https://pbs.twimg.com/profile_images/1812167774187487232/MyqCZBm0_normal.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="content cursor-pointer w-[84%]">
+                <span class="font-semibold hover:underline"
+                  >Sandeep Kashyap
+                </span>
+                <span class="text-zinc-500">@sandeepkashyap07 . 22h</span>
+                <div>
+                  hey i am sandeep kumar this my new project in which i created
+                  a twitter clone using html javascript and tailwindCSS
+                </div>
+                <div class="postimg mt-3">
+                  <img
+                    class="rounded-xl"
+                    src="https://pbs.twimg.com/media/GcMk1d6asAAH2N0?format=jpg&name=small"
+                    alt=""
+                    width="400px"
+                  />
+                </div>
+                <div class="icons my-1 flex items-center justify-between">
+                  <div
+                    class="icon space-x-0 sm:space-x-5  lg:space-x-[32px] flex items-center text-zinc-500"
+                  >
+                    <!-- <div class=" flex items-center hover:text-sky-500 hover:bg-gray-900 py-3 px-3 rounded-3xl">
+                    </div> -->
+
+                    <div
+                      class="flex items-center hover:text-sky-500 hover:bg-gray-900 py-3 px-3 rounded-3xl"
+                    >
+                      <span class="material-symbols-outlined text-[23px]">
+                        mode_comment </span
+                      >140k
+                    </div>
+
+                    <div
+                      class="flex items-center hover:text-green-500 hover:bg-gray-900 py-3 px-3 rounded-3xl"
+                    >
+                      <span class="material-symbols-outlined text-[23px]">
+                        repeat </span
+                      >200k
+                    </div>
+                    <div
+                      class="flex items-center hover:text-rose-500 hover:bg-zinc-800 py-3 px-3 rounded-3xl"
+                    >
+                      <span class="material-symbols-outlined text-[23px]">
+                        favorite
+                      </span>
+                      1.3m
+                    </div>
+                    <div
+                      class="flex items-center hover:text-sky-500 hover:bg-gray-900 py-3 px-3 rounded-3xl"
+                    >
+                      <span class="material-symbols-outlined text-[23px]">
+                        bar_chart_4_bars </span
+                      >38k
+                    </div>
+                  </div>
+                  <div class="text-[20px] text-zinc-500 mr-3">
+                    <span class="material-symbols-outlined text-[23px]">
+                      bookmark
+                    </span>
+                    <span class="material-symbols-outlined text-[23px]">
+                      upload
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bg-zinc-600 h-[1px] w-full"></div>
+          </div>
+          <div class="post my-2">
+            <div class="flex">
+              <div class="image ml-4 my-1 mr-2">
+                <img
+                  class="rounded-full"
+                  src="	https://pbs.twimg.com/profile_images/1812167774187487232/MyqCZBm0_normal.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="content cursor-pointer w-[84%]">
+                <span class="font-semibold hover:underline"
+                  >Sandeep Kashyap
+                </span>
+                <span class="text-zinc-500">@sandeepkashyap07 . 22h</span>
+                <div>
+                  hey i am sandeep kumar this my new project in which i created
+                  a twitter clone using html javascript and tailwindCSS
+                </div>
+                <div class="postimg mt-3">
+                  <img
+                    class="rounded-xl"
+                    src="https://pbs.twimg.com/media/GcMk1d6asAAH2N0?format=jpg&name=small"
+                    alt=""
+                    width="400px"
+                  />
+                </div>
+                <div class="icons my-1 flex items-center justify-between">
+                  <div
+                    class="icon space-x-0 sm:space-x-5  lg:space-x-[32px] flex items-center text-zinc-500"
+                  >
+                    <!-- <div class=" flex items-center hover:text-sky-500 hover:bg-gray-900 py-3 px-3 rounded-3xl">
+                    </div> -->
+
+                    <div
+                      class="flex items-center hover:text-sky-500 hover:bg-gray-900 py-3 px-3 rounded-3xl"
+                    >
+                      <span class="material-symbols-outlined text-[23px]">
+                        mode_comment </span
+                      >140k
+                    </div>
+
+                    <div
+                      class="flex items-center hover:text-green-500 hover:bg-gray-900 py-3 px-3 rounded-3xl"
+                    >
+                      <span class="material-symbols-outlined text-[23px]">
+                        repeat </span
+                      >200k
+                    </div>
+                    <div
+                      class="flex items-center hover:text-rose-500 hover:bg-zinc-800 py-3 px-3 rounded-3xl"
+                    >
+                      <span class="material-symbols-outlined text-[23px]">
+                        favorite
+                      </span>
+                      1.3m
+                    </div>
+                    <div
+                      class="flex items-center hover:text-sky-500 hover:bg-gray-900 py-3 px-3 rounded-3xl"
+                    >
+                      <span class="material-symbols-outlined text-[23px]">
+                        bar_chart_4_bars </span
+                      >38k
+                    </div>
+                  </div>
+                  <div class="text-[20px] text-zinc-500 mr-3">
+                    <span class="material-symbols-outlined text-[23px]">
+                      bookmark
+                    </span>
+                    <span class="material-symbols-outlined text-[23px]">
+                      upload
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bg-zinc-600 h-[1px] w-full"></div>
+          </div>
+          <div class="post my-2">
+            <div class="flex">
+              <div class="image ml-4 my-1 mr-2">
+                <img
+                  class="rounded-full"
+                  src="	https://pbs.twimg.com/profile_images/1812167774187487232/MyqCZBm0_normal.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="content cursor-pointer w-[84%]">
+                <span class="font-semibold hover:underline"
+                  >Sandeep Kashyap
+                </span>
+                <span class="text-zinc-500">@sandeepkashyap07 . 22h</span>
+                <div>
+                  hey i am sandeep kumar this my new project in which i created
+                  a twitter clone using html javascript and tailwindCSS
+                </div>
+                <div class="postimg mt-3">
+                  <img
+                    class="rounded-xl"
+                    src="https://pbs.twimg.com/media/GcMk1d6asAAH2N0?format=jpg&name=small"
+                    alt=""
+                    width="400px"
+                  />
+                </div>
+                <div class="icons my-1 flex items-center justify-between">
+                  <div
+                    class="icon space-x-0 sm:space-x-5  lg:space-x-[32px] flex items-center text-zinc-500"
+                  >
+                    <!-- <div class=" flex items-center hover:text-sky-500 hover:bg-gray-900 py-3 px-3 rounded-3xl">
+                    </div> -->
+
+                    <div
+                      class="flex items-center hover:text-sky-500 hover:bg-gray-900 py-3 px-3 rounded-3xl"
+                    >
+                      <span class="material-symbols-outlined text-[23px]">
+                        mode_comment </span
+                      >140k
+                    </div>
+
+                    <div
+                      class="flex items-center hover:text-green-500 hover:bg-gray-900 py-3 px-3 rounded-3xl"
+                    >
+                      <span class="material-symbols-outlined text-[23px]">
+                        repeat </span
+                      >200k
+                    </div>
+                    <div
+                      class="flex items-center hover:text-rose-500 hover:bg-zinc-800 py-3 px-3 rounded-3xl"
+                    >
+                      <span class="material-symbols-outlined text-[23px]">
+                        favorite
+                      </span>
+                      1.3m
+                    </div>
+                    <div
+                      class="flex items-center hover:text-sky-500 hover:bg-gray-900 py-3 px-3 rounded-3xl"
+                    >
+                      <span class="material-symbols-outlined text-[23px]">
+                        bar_chart_4_bars </span
+                      >38k
+                    </div>
+                  </div>
+                  <div class="text-[20px] text-zinc-500 mr-3">
+                    <span class="material-symbols-outlined text-[23px]">
+                      bookmark
+                    </span>
+                    <span class="material-symbols-outlined text-[23px]">
+                      upload
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bg-zinc-600 h-[1px] w-full"></div>
+          </div>
+          <div class="post my-2">
+            <div class="flex">
+              <div class="image ml-4 my-1 mr-2">
+                <img
+                  class="rounded-full"
+                  src="	https://pbs.twimg.com/profile_images/1812167774187487232/MyqCZBm0_normal.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="content cursor-pointer w-[84%]">
+                <span class="font-semibold hover:underline"
+                  >Sandeep Kashyap
+                </span>
+                <span class="text-zinc-500">@sandeepkashyap07 . 22h</span>
+                <div>
+                  hey i am sandeep kumar this my new project in which i created
+                  a twitter clone using html javascript and tailwindCSS
+                </div>
+                <div class="postimg mt-3">
+                  <img
+                    class="rounded-xl"
+                    src="https://pbs.twimg.com/media/GcMk1d6asAAH2N0?format=jpg&name=small"
+                    alt=""
+                    width="400px"
+                  />
+                </div>
+                <div class="icons my-1 flex items-center justify-between">
+                  <div
+                    class="icon space-x-0 sm:space-x-5  lg:space-x-[32px] flex items-center text-zinc-500"
+                  >
+                    <!-- <div class=" flex items-center hover:text-sky-500 hover:bg-gray-900 py-3 px-3 rounded-3xl">
+                    </div> -->
+
+                    <div
+                      class="flex items-center hover:text-sky-500 hover:bg-gray-900 py-3 px-3 rounded-3xl"
+                    >
+                      <span class="material-symbols-outlined text-[23px]">
+                        mode_comment </span
+                      >140k
+                    </div>
+
+                    <div
+                      class="flex items-center hover:text-green-500 hover:bg-gray-900 py-3 px-3 rounded-3xl"
+                    >
+                      <span class="material-symbols-outlined text-[23px]">
+                        repeat </span
+                      >200k
+                    </div>
+                    <div
+                      class="flex items-center hover:text-rose-500 hover:bg-zinc-800 py-3 px-3 rounded-3xl"
+                    >
+                      <span class="material-symbols-outlined text-[23px]">
+                        favorite
+                      </span>
+                      1.3m
+                    </div>
+                    <div
+                      class="flex items-center hover:text-sky-500 hover:bg-gray-900 py-3 px-3 rounded-3xl"
+                    >
+                      <span class="material-symbols-outlined text-[23px]">
+                        bar_chart_4_bars </span
+                      >38k
+                    </div>
+                  </div>
+                  <div class="text-[20px] text-zinc-500 mr-3">
+                    <span class="material-symbols-outlined text-[23px]">
+                      bookmark
+                    </span>
+                    <span class="material-symbols-outlined text-[23px]">
+                      upload
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bg-zinc-600 h-[1px] w-full"></div>
+          </div>
+
+          
+        </div>
+      </div>
+
+      <div class="third w-[55%] hidden xl:block">
+        <div class="search ml-7 my-2 w-3/5">
+          <input
+            type="text"
+            class="w-full rounded-full bg-zinc-800 py-2 pl-10 placeholder-zinc-400 outline-none"
+            placeholder="Search "
+          />
+        </div>
+
+        <div
+          class="subscribe ml-7 my-2 w-3/5 border border-zinc-700 rounded-2xl"
+        >
+          <div class="py-3 px-4 flex flex-col">
+            <div class="text-xl font-extrabold">Subscribe to Premium</div>
+            <div class="py-1 text-zinc-300">
+              Subscribe to unlock new features and if eligible, receive a share
+              of revenue.
+            </div>
+            <div class="button w-full text-center mt-3 flex justify-start">
+              <button
+                class="bg-sky-500 text-white px-4 py-2 font-bold text-md rounded-full hover:bg-sky-600"
+              >
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="whats sticky top-0 mt-4 w-3/5 border rounded-xl ml-7 my-2 p-3 border-zinc-700 space-y-3"
+        >
+          <h1 class="text-xl font-bold pl-[2px]">What's happening</h1>
+          <div
+            class="item my-2 px-3 hover:bg-zinc-800 cursor-pointer rounded-xl"
+          >
+            <div class="text-zinc-300">Trending in india</div>
+            <div class="font-bold">#championsTrophy</div>
+            <div class="text-sm text-zinc-300">100.3k Posts</div>
+          </div>
+
+          <div class="item px-3 hover:bg-zinc-800 cursor-pointer rounded-xl">
+            <div class="text-zinc-300">Trending in india</div>
+            <div class="font-bold">#sandeep</div>
+            <div class="text-sm text-zinc-300">100.3k Posts</div>
+          </div>
+
+          <div class="item px-3 hover:bg-zinc-800 cursor-pointer rounded-xl">
+            <div class="text-zinc-300">Trending in india</div>
+            <div class="font-bold">#sandeepkashyap</div>
+            <div class="text-sm text-zinc-300">100.3k Posts</div>
+          </div>
+
+          <div class="item px-3 hover:bg-zinc-800 cursor-pointer rounded-xl">
+            <div class="text-zinc-300">Trending in india</div>
+            <div class="font-bold">#hehe</div>
+            <div class="text-sm text-zinc-300">100.3k Posts</div>
+          </div>
+
+          <div class="show px-3 pb-2 pt-2 text-blue-600 hover:cursor-pointer">Show more</div>
+        </div>
+
+        <div
+          class="wh0 sticky top-[45vh] mt-4 w-3/5 border rounded-xl ml-7 my-2 p-3 border-zinc-700 space-y-3"
+        >
+          <h1 class="text-xl font-bold pl-[2px]">Who to follow</h1>
+
+          <div class="item flex flex-wrap justify-around items-center">
+            <div class="pic flex mr-5">
+              <img
+                class="rounded-full w-10 hover: cursor-pointer"
+                src="https://www.newsonair.gov.in/wp-content/uploads/2024/08/3-Prime-Minister-Narendra-Modi-File-photo.jpeg"
+                alt=""
+              />
+              <div
+                class="font-bold px-2 text-sm hover: cursor-pointer hover:underline"
+              >
+                Narender Modi
+                <div
+                  class="text-zinc-400 font-normal hover:no-underline hover: cursor-pointer"
+                >
+                  @PMOIndia
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-2xl text-sm px-5 py-1 font-bold text-black flex justify-center items-center hover:cursor-pointer hover:bg-zinc-200"
+            >
+              Follow
+            </div>
+          </div>
+
+          <div class="item flex flex-wrap justify-around items-center">
+            <div class="pic flex mr-5">
+              <img
+                class="rounded-full w-10 hover: cursor-pointer"
+                src="https://www.newsonair.gov.in/wp-content/uploads/2024/08/3-Prime-Minister-Narendra-Modi-File-photo.jpeg"
+                alt=""
+              />
+              <div
+                class="font-bold px-2 text-sm hover: cursor-pointer hover:underline"
+              >
+                Narender Modi
+                <div
+                  class="text-zinc-400 font-normal hover:no-underline hover: cursor-pointer"
+                >
+                  @PMOIndia
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-2xl text-sm px-5 py-1 font-bold text-black flex justify-center items-center hover:cursor-pointer hover:bg-zinc-200"
+            >
+              Follow
+            </div>
+          </div>
+
+          <div class="item flex flex-wrap justify-around items-center">
+            <div class="pic flex mr-5">
+              <img
+                class="rounded-full w-10 hover: cursor-pointer"
+                src="https://www.newsonair.gov.in/wp-content/uploads/2024/08/3-Prime-Minister-Narendra-Modi-File-photo.jpeg"
+                alt=""
+              />
+              <div
+                class="font-bold px-2 text-sm hover: cursor-pointer hover:underline"
+              >
+                Narender Modi
+                <div
+                  class="text-zinc-400 font-normal hover:no-underline hover: cursor-pointer"
+                >
+                  @PMOIndia
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-2xl text-sm px-5 py-1 font-bold text-black flex justify-center items-center hover:cursor-pointer hover:bg-zinc-200"
+            >
+              Follow
+            </div>
+          </div>
+
+          <div class="item flex flex-wrap justify-around items-center">
+            <div class="pic flex mr-5">
+              <img
+                class="rounded-full w-10 hover: cursor-pointer"
+                src="https://www.newsonair.gov.in/wp-content/uploads/2024/08/3-Prime-Minister-Narendra-Modi-File-photo.jpeg"
+                alt=""
+              />
+              <div
+                class="font-bold px-2 text-sm hover: cursor-pointer hover:underline"
+              >
+                Narender Modi
+                <div
+                  class="text-zinc-400 font-normal hover:no-underline hover: cursor-pointer"
+                >
+                  @PMOIndia
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-2xl text-sm px-5 py-1 font-bold text-black flex justify-center items-center hover:cursor-pointer hover:bg-zinc-200"
+            >
+              Follow
+            </div>
+          </div>
+
+          <div class="show px-3 pb-2 pt-2 text-blue-600 hover:cursor-pointer" >Show more</div>
+        </div>
+        <div class=" terms sticky top-[78vh] text-sm text-zinc-500 mt-4 w-3/5  ml-7 my-2 p-3 ">
+          <div class="space-x-1 ">
+            <span class="hover:underline hover:cursor-pointer">Terms of Service</span>
+            <span class="hover:underline hover:cursor-pointer">Privacy Policy</span> 
+            <span class="hover:underline hover:cursor-pointer">Cookie Policy</span>
+            <span class="hover:underline hover:cursor-pointer">Accessibility</span>
+           <span class="hover:underline hover:cursor-pointer"> Ads info</span>
+           <span class="hover:underline hover:cursor-pointer">More...</span> 
+           <span class="hover:underline hover:cursor-pointer">© 2024 X Corp.</span>
+            
+            
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
